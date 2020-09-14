@@ -6,8 +6,8 @@
     Input: 123
     Output: 321
 
-    Solution:
-    -convert to string, reverse and convert to int
+    Solution: (Slow)
+    -Convert to string, reverse and convert to int
 '''
 
 class Solution:

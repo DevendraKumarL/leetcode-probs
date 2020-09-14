@@ -6,7 +6,7 @@
     Input: 123
     Output: 321
 
-    Solution:
+    Solution: (Fast)
     -Get the length of the num by converting to string
     -Loop the below until num > 0
     -Perform n % 10 to get the last digit of the num
@@ -22,6 +22,7 @@ public:
         int sum = 0;
         while (n > 0) {
             int dig = n % 10;
+            // or sum = sum * 10 + (n % 10); here sum is reverted number. i.e., 10 + 2 = 12, 120 + 3 = 123
             long numToAdd = dig * pow(10, len-1);
             if (sum > INT_MAX - numToAdd) {
                 return 0;
