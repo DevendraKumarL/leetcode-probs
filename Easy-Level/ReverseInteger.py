@@ -7,7 +7,7 @@
     Output: 321
 
     Solution: (Slow)
-    -Convert to string, reverse and convert to int
+        -Convert to string, reverse and convert to int
 '''
 
 class Solution:

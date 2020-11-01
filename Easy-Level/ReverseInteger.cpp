@@ -9,9 +9,9 @@
     Solution: (Fast)
     -Get the length of the num by converting to string
     -Loop the below until num > 0
-    -Perform n % 10 to get the last digit of the num
-    -Accumulate sum += n % 10 * pow(10, len-1) // digit * 1000, 100, 10...
-    -Reduce the num = num / 10 to remove out the last digit
+        -Perform n % 10 to get the last digit of the num
+        -Accumulate sum += n % 10 * pow(10, len-1) // digit * 1000, 100, 10...
+        -Reduce the num = num / 10 to remove out the last digit
 */
 
 class Solution {

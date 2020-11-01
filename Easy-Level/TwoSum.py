@@ -10,14 +10,14 @@
 
     Solution:
     -Travers the array
-    -Store a dictionary <arrayElement, elementIndex>
-    -Subtract currentArrElement from target sum. tmp = target-arr[i]
-    -Find key tmp in dict, if found result is [i, dict[tmp]]
-    -If not found Keep updating dict[arr[i]] = i
+        -Store a dictionary <arrayElement, elementIndex>
+        -Subtract currentArrElement from target sum. tmp = target-arr[i]
+        -Find key tmp in dict, if found result is [i, dict[tmp]]
+        -If not found Keep updating dict[arr[i]] = i
 '''
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: List[int], target: int):
         dict = {}
         for i in range(0, len(nums)):
             temp = target - nums[i]

@@ -11,10 +11,10 @@
 
     Solution2: (Fast)
     -x is original number
-    -If x < 0 || (x % 10 != 0 && x != 0) then it is not a palindrome
+    -If x < 0 || (x % 10 == 0 && x != 0) then it is not a palindrome
     -Revert the last half of the number and check it is equal to the first half of the number
-    -Revert last half of number: reverted = (reverted * 10) + x % 10. i.e., 10 + 2 = 12, 120 + 3 = 123
-    -Condition that reaches the half the original number: x > reverted
+        -Revert last half of number: reverted = (reverted * 10) + x % 10. i.e., 10 + 2 = 12, 120 + 3 = 123
+        -Condition that reaches the half the original number: x > reverted
 */
 
 // Solution 2
